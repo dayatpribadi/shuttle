@@ -1,0 +1,891 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<title>Doodle I Fast build Admin dashboard for any platform</title>
+	<meta name="description" content="Doodle is a Dashboard & Admin Site Responsive Template by hencework." />
+	<meta name="keywords" content="admin, admin dashboard, admin template, cms, crm, Doodle Admin, Doodleadmin, premium admin templates, responsive admin, sass, panel, software, ui, visualization, web app, application" />
+	<meta name="author" content="hencework"/>
+	
+	<!-- Favicon -->
+	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+	
+	<!-- Morris Charts CSS -->
+    <link href="vendors/bower_components/morris.js/morris.css" rel="stylesheet" type="text/css"/>
+	
+	<!-- Data table CSS -->
+	<link href="vendors/bower_components/datatables/media/css/jquery.dataTables.min.css" rel="stylesheet" type="text/css"/>
+	
+	<link href="vendors/bower_components/jquery-toast-plugin/dist/jquery.toast.min.css" rel="stylesheet" type="text/css">
+	<!-- bootstrap-tagsinput CSS -->
+	<link href="vendors/bower_components/bootstrap-tagsinput/dist/bootstrap-tagsinput.css" rel="stylesheet" type="text/css"/>
+
+	<!-- select2 CSS -->
+	<link href="vendors/bower_components/select2/dist/css/select2.min.css" rel="stylesheet" type="text/css"/>
+	<!-- multi-select CSS -->
+	<link href="vendors/bower_components/multiselect/css/multi-select.css" rel="stylesheet" type="text/css"/>
+	<!-- switchery CSS -->
+	<link href="vendors/bower_components/switchery/dist/switchery.min.css" rel="stylesheet" type="text/css"/>
+
+	<!-- bootstrap-select CSS -->
+	<link href="vendors/bower_components/bootstrap-select/dist/css/bootstrap-select.min.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+	<!-- Leaflet Routing Machine CSS -->
+	<link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine/dist/leaflet-routing-machine.css" />
+
+	<!-- Custom CSS -->
+	<link href="dist/css/style.css" rel="stylesheet" type="text/css">
+
+	
+</head>
+
+<body>
+	<!-- Preloader -->
+	<div class="preloader-it">
+		<div class="la-anim-1"></div>
+	</div>
+	<!-- /Preloader -->
+    <div class="wrapper theme-1-active pimary-color-red">
+		<!-- Top Menu Items -->
+		<nav class="navbar navbar-inverse navbar-fixed-top">
+			<div class="mobile-only-brand pull-left">
+				<div class="nav-header pull-left">
+					<div class="logo-wrap">
+						<a href="index.html">
+							<img class="brand-img" src="dist/img/logo.png" alt="brand"/>
+							<span class="brand-text">Lorem Ipsum</span>
+						</a>
+					</div>
+				</div>	
+				<a id="toggle_nav_btn" class="toggle-left-nav-btn inline-block ml-20 pull-left" href="javascript:void(0);"><i class="zmdi zmdi-menu"></i></a>
+				<a id="toggle_mobile_search" data-toggle="collapse" data-target="#search_form" class="mobile-only-view" href="javascript:void(0);"><i class="zmdi zmdi-search"></i></a>
+				<a id="toggle_mobile_nav" class="mobile-only-view" href="javascript:void(0);"><i class="zmdi zmdi-more"></i></a>
+				<form id="search_form" role="search" class="top-nav-search collapse pull-left">
+					<div class="input-group">
+						<input type="text" name="example-input1-group2" class="form-control" placeholder="Search">
+						<span class="input-group-btn">
+						<button type="button" class="btn  btn-default"  data-target="#search_form" data-toggle="collapse" aria-label="Close" aria-expanded="true"><i class="zmdi zmdi-search"></i></button>
+						</span>
+					</div>
+				</form>
+			</div>
+			<div id="mobile_only_nav" class="mobile-only-nav pull-right">
+				<ul class="nav navbar-right top-nav pull-right">
+					<li>
+						<a id="open_right_sidebar" href="#"><i class="zmdi zmdi-settings top-nav-icon"></i></a>
+					</li>
+					<li class="dropdown full-width-drp">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="zmdi zmdi-more-vert top-nav-icon"></i></a>
+						<ul class="dropdown-menu mega-menu pa-0" data-dropdown-in="fadeIn" data-dropdown-out="fadeOut">
+							<li class="product-nicescroll-bar row">
+								<ul class="pa-20">
+									<li class="col-md-3 col-xs-6 col-menu-list">
+										<a href="javascript:void(0);"><div class="pull-left"><i class="zmdi zmdi-landscape mr-20"></i><span class="right-nav-text">Dashboard</span></div><div class="pull-right"><i class="zmdi zmdi-caret-down"></i></div><div class="clearfix"></div></a>
+										<hr class="light-grey-hr ma-0"/>
+										<ul>
+											<li>
+												<a href="index.html">Analytical</a>
+											</li>
+											<li>
+												<a  href="index2.html">Demographic</a>
+											</li>
+											<li>
+												<a href="index3.html">Project</a>
+											</li>
+											<li>
+												<a href="profile.html">profile</a>
+											</li>
+										</ul>
+										<a href="widgets.html"><div class="pull-left"><i class="zmdi zmdi-flag mr-20"></i><span class="right-nav-text">widgets</span></div><div class="pull-right"><span class="label label-warning">8</span></div><div class="clearfix"></div></a>
+										<hr class="light-grey-hr ma-0"/>
+										<a href="documentation.html"><div class="pull-left"><i class="zmdi zmdi-book mr-20"></i><span class="right-nav-text">documentation</span></div><div class="clearfix"></div></a>
+										<hr class="light-grey-hr ma-0"/>
+									</li>
+									<li class="col-md-3 col-xs-6 col-menu-list">
+										<a href="javascript:void(0);">
+											<div class="pull-left">
+												<i class="zmdi zmdi-shopping-basket mr-20"></i><span class="right-nav-text">E-Commerce</span>
+											</div>	
+											<div class="pull-right"><span class="label label-success">hot</span>
+											</div>
+											<div class="clearfix"></div>
+										</a>
+										<hr class="light-grey-hr ma-0"/>
+										<ul>
+											<li>
+												<a href="e-commerce.html">Dashboard</a>
+											</li>
+											<li>
+												<a href="product.html">Products</a>
+											</li>
+											<li>
+												<a href="product-detail.html">Product Detail</a>
+											</li>
+											<li>
+												<a href="add-products.html">Add Product</a>
+											</li>
+											<li>
+												<a href="product-orders.html">Orders</a>
+											</li>
+											<li>
+												<a href="product-cart.html">Cart</a>
+											</li>
+											<li>
+												<a href="product-checkout.html">Checkout</a>
+											</li>
+										</ul>
+									</li>
+									<li class="col-md-6 col-xs-12 preview-carousel">
+										<a href="javascript:void(0);"><div class="pull-left"><span class="right-nav-text">latest products</span></div><div class="clearfix"></div></a>
+										<hr class="light-grey-hr ma-0"/>
+										<div class="product-carousel owl-carousel owl-theme text-center">
+											<a href="#">
+												<img src="dist/img/chair.jpg" alt="chair">
+												<span>Circle chair</span>
+											</a>
+											<a href="#">
+												<img src="dist/img/chair2.jpg" alt="chair">
+												<span>square chair</span>
+											</a>
+											<a href="#">
+												<img src="dist/img/chair3.jpg" alt="chair">
+												<span>semi circle chair</span>
+											</a>
+											<a href="#">
+												<img src="dist/img/chair4.jpg" alt="chair">
+												<span>wooden chair</span>
+											</a>
+											<a href="#">
+												<img src="dist/img/chair2.jpg" alt="chair">
+												<span>square chair</span>
+											</a>								
+										</div>
+									</li>
+								</ul>
+							</li>	
+						</ul>
+					</li>
+					<li class="dropdown alert-drp">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="zmdi zmdi-notifications top-nav-icon"></i><span class="top-nav-icon-badge">5</span></a>
+						<ul  class="dropdown-menu alert-dropdown" data-dropdown-in="bounceIn" data-dropdown-out="bounceOut">
+							<li>
+								<div class="notification-box-head-wrap">
+									<span class="notification-box-head pull-left inline-block">notifications</span>
+									<a class="txt-danger pull-right clear-notifications inline-block" href="javascript:void(0)"> clear all </a>
+									<div class="clearfix"></div>
+									<hr class="light-grey-hr ma-0"/>
+								</div>
+							</li>
+							<li>
+								<div class="streamline message-nicescroll-bar">
+									<div class="sl-item">
+										<a href="javascript:void(0)">
+											<div class="icon bg-green">
+												<i class="zmdi zmdi-flag"></i>
+											</div>
+											<div class="sl-content">
+												<span class="inline-block capitalize-font  pull-left truncate head-notifications">
+												New subscription created</span>
+												<span class="inline-block font-11  pull-right notifications-time">2pm</span>
+												<div class="clearfix"></div>
+												<p class="truncate">Your customer subscribed for the basic plan. The customer will pay $25 per month.</p>
+											</div>
+										</a>	
+									</div>
+									<hr class="light-grey-hr ma-0"/>
+									<div class="sl-item">
+										<a href="javascript:void(0)">
+											<div class="icon bg-yellow">
+												<i class="zmdi zmdi-trending-down"></i>
+											</div>
+											<div class="sl-content">
+												<span class="inline-block capitalize-font  pull-left truncate head-notifications txt-warning">Server #2 not responding</span>
+												<span class="inline-block font-11 pull-right notifications-time">1pm</span>
+												<div class="clearfix"></div>
+												<p class="truncate">Some technical error occurred needs to be resolved.</p>
+											</div>
+										</a>	
+									</div>
+									<hr class="light-grey-hr ma-0"/>
+									<div class="sl-item">
+										<a href="javascript:void(0)">
+											<div class="icon bg-blue">
+												<i class="zmdi zmdi-email"></i>
+											</div>
+											<div class="sl-content">
+												<span class="inline-block capitalize-font  pull-left truncate head-notifications">2 new messages</span>
+												<span class="inline-block font-11  pull-right notifications-time">4pm</span>
+												<div class="clearfix"></div>
+												<p class="truncate"> The last payment for your G Suite Basic subscription failed.</p>
+											</div>
+										</a>	
+									</div>
+									<hr class="light-grey-hr ma-0"/>
+									<div class="sl-item">
+										<a href="javascript:void(0)">
+											<div class="sl-avatar">
+												<img class="img-responsive" src="dist/img/avatar.jpg" alt="avatar"/>
+											</div>
+											<div class="sl-content">
+												<span class="inline-block capitalize-font  pull-left truncate head-notifications">Sandy Doe</span>
+												<span class="inline-block font-11  pull-right notifications-time">1pm</span>
+												<div class="clearfix"></div>
+												<p class="truncate">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit</p>
+											</div>
+										</a>	
+									</div>
+									<hr class="light-grey-hr ma-0"/>
+									<div class="sl-item">
+										<a href="javascript:void(0)">
+											<div class="icon bg-red">
+												<i class="zmdi zmdi-storage"></i>
+											</div>
+											<div class="sl-content">
+												<span class="inline-block capitalize-font  pull-left truncate head-notifications txt-danger">99% server space occupied.</span>
+												<span class="inline-block font-11  pull-right notifications-time">1pm</span>
+												<div class="clearfix"></div>
+												<p class="truncate">consectetur, adipisci velit.</p>
+											</div>
+										</a>	
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="notification-box-bottom-wrap">
+									<hr class="light-grey-hr ma-0"/>
+									<a class="block text-center read-all" href="javascript:void(0)"> read all </a>
+									<div class="clearfix"></div>
+								</div>
+							</li>
+						</ul>
+					</li>
+					<li class="dropdown auth-drp">
+						<a href="#" class="dropdown-toggle pr-0" data-toggle="dropdown"><img src="dist/img/user1.png" alt="user_auth" class="user-auth-img img-circle"/><span class="user-online-status"></span></a>
+						<ul class="dropdown-menu user-auth-dropdown" data-dropdown-in="flipInX" data-dropdown-out="flipOutX">
+							<li>
+								<a href="profile.html"><i class="zmdi zmdi-account"></i><span>Profile</span></a>
+							</li>
+							<li>
+								<a href="#"><i class="zmdi zmdi-card"></i><span>my balance</span></a>
+							</li>
+							<li>
+								<a href="inbox.html"><i class="zmdi zmdi-email"></i><span>Inbox</span></a>
+							</li>
+							<li>
+								<a href="#"><i class="zmdi zmdi-settings"></i><span>Settings</span></a>
+							</li>
+							<li class="divider"></li>
+							<li class="sub-menu show-on-hover">
+								<a href="#" class="dropdown-toggle pr-0 level-2-drp"><i class="zmdi zmdi-check text-success"></i> available</a>
+								<ul class="dropdown-menu open-left-side">
+									<li>
+										<a href="#"><i class="zmdi zmdi-check text-success"></i><span>available</span></a>
+									</li>
+									<li>
+										<a href="#"><i class="zmdi zmdi-circle-o text-warning"></i><span>busy</span></a>
+									</li>
+									<li>
+										<a href="#"><i class="zmdi zmdi-minus-circle-outline text-danger"></i><span>offline</span></a>
+									</li>
+								</ul>	
+							</li>
+							<li class="divider"></li>
+							<li>
+								<a href="#"><i class="zmdi zmdi-power"></i><span>Log Out</span></a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</div>	
+		</nav>
+		<!-- /Top Menu Items -->
+		
+		<!-- Left Sidebar Menu -->
+		<div class="fixed-sidebar-left">
+			<ul class="nav navbar-nav side-nav nicescroll-bar">
+				<li class="navigation-header">
+					<span>Main</span> 
+					<i class="zmdi zmdi-more"></i>
+				</li>
+				<li>
+					<a href="index.html"><div class="pull-left"><i class="zmdi zmdi-desktop-mac mr-20"></i><span class="right-nav-text">Dashboard</span></div><div class="pull-right"></div><div class="clearfix"></div></a>
+				</li>
+
+				<li><hr class="light-grey-hr mb-10"/></li>
+
+				<li class="navigation-header">
+					<span>Master Data</span> 
+					<i class="zmdi zmdi-more"></i>
+				</li>
+				<li>
+					<a href="javascript:void(0);" data-toggle="collapse" data-target="#ui_user"><div class="pull-left"><i class="zmdi zmdi-accounts mr-20"></i><span class="right-nav-text">Data Pengguna</span></div><div class="pull-right"><i class="zmdi zmdi-caret-down"></i></div><div class="clearfix"></div></a>
+					<ul id="ui_user" class="collapse collapse-level-1 two-col-list">
+						<li>
+							<a href="sh_jenis_pengguna.html">Jenis Pengguna</a>
+						</li>
+						<li>
+							<a href="sh_user.html">Data Admin</a>
+						</li>
+						<li>
+							<a href="sh_driver.html">Data Driver</a>
+						</li>
+						<li>
+							<a href="sh_kondektur.html">Data Kondektur</a>
+						</li>
+						<li>
+							<a href="sh_penumpang.html">Data Penumpang</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="sh_role.html"><div class="pull-left"><i class="zmdi zmdi-account-o mr-20"></i><span class="right-nav-text">Hak Akses Pengguna</span></div><div class="pull-right"></div><div class="clearfix"></div></a>
+				</li>
+				<li>
+					<a href="javascript:void(0);" data-toggle="collapse" data-target="#ui_bus"><div class="pull-left"><i class="zmdi zmdi-bus mr-20"></i><span class="right-nav-text">Data Armada</span></div><div class="pull-right"><i class="zmdi zmdi-caret-down"></i></div><div class="clearfix"></div></a>
+					<ul id="ui_bus" class="collapse collapse-level-1 two-col-list">
+						<li>
+							<a href="sh_armada.html">Data Bus</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="javascript:void(0);" data-toggle="collapse" data-target="#ui_rute"><div class="pull-left"><i class="zmdi zmdi-directions mr-20"></i><span class="right-nav-text">Data Rute Bus</span></div><div class="pull-right"><i class="zmdi zmdi-caret-down"></i></div><div class="clearfix"></div></a>
+					<ul id="ui_rute" class="collapse collapse-level-1 two-col-list">
+						<li>
+							<a href="#">Data Rute</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="javascript:void(0);" data-toggle="collapse" data-target="#ui_halte"><div class="pull-left"><i class="zmdi zmdi-directions-walk mr-20"></i><span class="right-nav-text">Data Halte Bus</span></div><div class="pull-right"><i class="zmdi zmdi-caret-down"></i></div><div class="clearfix"></div></a>
+					<ul id="ui_halte" class="collapse collapse-level-1 two-col-list">
+						<li>
+							<a href="sh_halte.html">Data Halte</a>
+						</li>
+					</ul>
+				</li>
+
+				<li><hr class="light-grey-hr mb-10"/></li>
+
+				<li class="navigation-header">
+					<span>Monitoring</span> 
+					<i class="zmdi zmdi-more"></i>
+				</li>
+				<li>
+					<a href="javascript:void(0);" data-toggle="collapse" data-target="#pages_locate" class="active"><div class="pull-left"><i class="zmdi zmdi-google-pages mr-20"></i><span class="right-nav-text">Monitor Lokasi</span></div><div class="pull-right"><i class="zmdi zmdi-caret-down"></i></div><div class="clearfix"></div></a>
+					<ul id="pages_locate" class="collapse collapse-level-1 two-col-list show">
+						<li>
+							<a href="sh_monitor_locations.html" class="active">Monitor Lokasi Bus</a>
+						</li>
+						<li>
+							<a href="sh_bus_report.html">Report Shuttle Bus</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="javascript:void(0);" data-toggle="collapse" data-target="#pages_cp"><div class="pull-left"><i class="zmdi zmdi-check-circle mr-20"></i><span class="right-nav-text">Check Point</span></div><div class="pull-right"><i class="zmdi zmdi-caret-down"></i></div><div class="clearfix"></div></a>
+					<ul id="pages_cp" class="collapse collapse-level-1 two-col-list">
+						<li>
+							<a href="sh_timelines.html">Check Point</a>
+						</li>
+					</ul>
+				</li>
+
+				<li><hr class="light-grey-hr mb-10"/></li>
+				<li class="navigation-header">
+					<span>Documentation</span> 
+					<i class="zmdi zmdi-more"></i>
+				</li>
+				<li>
+					<a href="documentation.html"><div class="pull-left"><i class="zmdi zmdi-book mr-20"></i><span class="right-nav-text">documentation</span></div><div class="clearfix"></div></a>
+				</li>
+
+			</ul>
+		</div>
+		<!-- /Left Sidebar Menu -->
+		
+        <!-- Main Content -->
+		<div class="page-wrapper">
+            <div class="container-fluid pt-10">
+				<!-- Row -->
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="panel panel-default card-view">
+							<div class="panel-wrapper collapse in">
+								<div class="panel-body">
+									<div class="row">
+										<div class="form-wrap">
+											<form>
+												<div class="col-lg-3">
+													<div class="form-group">
+														<label class="control-label mb-10">Pilih Bus</label>
+														<select class="form-control select2">
+															<option>Select</option>
+															<optgroup label="Pilih Bus">
+																<option value="B1">BUS_001</option>
+																<option value="B2">BUS_002</option>
+															</optgroup>
+														</select>
+													</div>
+												</div>
+												<div class="col-lg-3">
+													<div class="form-group">
+														<label class="control-label mb-10">Rute</label>
+														<select class="form-control select2">
+															<option>Select</option>
+															<optgroup label="Pilih Rute">
+																<option value="R1">Rute1</option>
+																<option value="R2">Rute2</option>
+															</optgroup>
+														</select>
+													</div>
+												</div>
+												<div class="col-lg-3">
+													<div class="form-group">
+														<label class="control-label mb-10">Halte/Bus Stop</label>
+														<select class="form-control select2">
+															<option>Select</option>
+															<optgroup label="Pilih Halte">
+																<option value="H1">Halte_001</option>
+																<option value="H2">Halte_002</option>
+															</optgroup>
+														</select>
+													</div>
+												</div>
+												<div class="col-lg-3 col-xs-12">
+													<div class="form-group">
+														<label class="control-label mb-10">Filter</label>
+														<button class="btn btn-warning btn-block btn-outline btn-anim"><i class="fa fa-search-plus"></i><span class="btn-text">Tampilkan Data</span></button>
+													</div>
+												</div>
+											</form>	
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-lg-3">
+						<div class="panel panel-default card-view pa-0">
+							<div class="panel-wrapper collapse in">
+								<div class="panel-body pa-0">
+									<div class="sm-data-box bg-pink">
+										<div class="container-fluid">
+											<div class="row">
+												<a href="#" type="button">
+													<div class="col-xs-6 text-right pl-0 pr-0 data-wrap-left">
+														<span class="txt-light block counter">BG 1234 TZ</span>
+														<span class="weight-500 uppercase-font txt-light block font-13">BUS_001</span>
+													</div>
+													<div class="col-xs-6 text-center  pl-0 pr-0 data-wrap-right">
+														<i class="zmdi zmdi-bus txt-light data-right-rep-icon"></i>
+													</div>
+												</a>
+											</div>	
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3">
+						<div class="panel panel-default card-view pa-0">
+							<div class="panel-wrapper collapse in">
+								<div class="panel-body pa-0">
+									<div class="sm-data-box bg-primary">
+										<div class="container-fluid">
+											<div class="row">
+												<a href="#" type="button">
+													<div class="col-xs-6 text-right pl-0 pr-0 data-wrap-left">
+														<span class="txt-light block counter">12/32</span>
+														<span class="weight-500 uppercase-font txt-light block font-13">Member</span>
+													</div>
+													<div class="col-xs-6 text-center  pl-0 pr-0 data-wrap-right">
+														<i class="zmdi zmdi-male-female txt-light data-right-rep-icon"></i>
+													</div>
+												</a>
+											</div>	
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3">
+						<div class="panel panel-default card-view pa-0">
+							<div class="panel-wrapper collapse in">
+								<div class="panel-body pa-0">
+									<div class="sm-data-box bg-green">
+										<div class="container-fluid">
+											<div class="row">
+												<a href="#" type="button">
+													<div class="col-xs-6 text-right pl-0 pr-0 data-wrap-left">
+														<span class="txt-light block counter">Putra Siregar</span>
+														<span class="weight-500 uppercase-font txt-light block">Pengemudi</span>
+													</div>
+													<div class="col-xs-6 text-center  pl-0 pr-0 data-wrap-right">
+														<i class="zmdi zmdi-account txt-light data-right-rep-icon"></i>
+													</div>
+												</a>
+											</div>	
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3">
+						<div class="panel panel-default card-view pa-0">
+							<div class="panel-wrapper collapse in">
+								<div class="panel-body pa-0">
+									<div class="sm-data-box bg-blue">
+										<div class="container-fluid">
+											<div class="row">
+												<a href="sh_timelines.html" type="button">
+													<div class="col-xs-6 text-right pl-0 pr-0 data-wrap-left">
+														<span class="txt-light block counter p-0">
+															12 Km
+														</span>
+														<!-- <span class="weight-500 uppercase-font txt-light block">(2 Jam 15 Menit)</span> -->
+														<span class="weight-500 uppercase-font txt-light block mb-10">Perkiraan Waktu</span>
+													</div>
+													<div class="col-xs-6 text-center  pl-0 pr-0 data-wrap-right">
+														<i class="zmdi zmdi-directions txt-light data-right-rep-icon"></i>
+													</div>
+												</a>
+											</div>	
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<style>
+						.blob {
+							background: black;
+							border-radius: 50%;
+							margin: 10px;
+							height: 20px;
+							width: 20px;
+
+							box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
+							transform: scale(1);
+							animation: pulse 2s infinite;
+						}
+
+						@keyframes pulse {
+							0% {
+								transform: scale(0.95);
+								box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
+							}
+
+							70% {
+								transform: scale(1);
+								box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+							}
+
+							100% {
+								transform: scale(0.95);
+								box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+							}
+						}
+					</style>
+					<div class="col-lg-1">
+						<div class="panel panel-default card-view">
+							<div class="panel-wrapper collapse in">
+								<div class="panel-body">
+									<div class="row" style="display: flex; justify-content: center; align-items: center; flex-direction: column; border: 2px solid grey; padding-top: 10px; padding-bottom: 10px; border-radius: 5px; text-align: center; justify-content: center; margin: 1px;">
+										<button class="btn btn-lg btn-danger btn-icon-anim btn-circle" style="margin-bottom: 6px;" ></button>						
+										<button class="btn btn-lg btn-warning btn-icon-anim btn-circle" style="margin-bottom: 6px;"></button>						
+										<button class="btn btn-lg btn-success btn-icon-anim btn-circle" style="margin-bottom: 30px;"></button>
+										<button class="btn btn-lg bg-pink btn-icon-anim btn-circle blob" style="font-size: 13px; border: 1px solid #000;"></i>Panic</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-11">
+						<div class="panel panel-default card-view">
+							<div class="panel-wrapper collapse in">
+								<div class="panel-body">
+									<div id="map" style="height:400px;"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="panel panel-default card-view">
+							<div class="panel-wrapper collapse in">
+								<div class="panel-body">
+									<ul class="timeline">
+										<li>
+											<div class="timeline-badge bg-green">
+												<i class="zmdi zmdi-bus" ></i>
+											</div>
+											<div class="timeline-panel pa-30">
+												<div class="timeline-heading">
+													<h6 class="mb-15">Halte 001</h6>
+												</div>
+												<div class="timeline-body">
+													<p>Invitamus me testatur sed quod non dum animae tuae lacrimis ut libertatem deum rogus aegritudinis causet. Dicens hoc contra serpentibus isto.</p>
+												</div>
+											</div>
+										</li>
+										
+										<li class="timeline-inverted">
+											<div class="timeline-badge bg-red">
+												<i class="zmdi zmdi-bus" ></i>
+											</div>
+											<div class="timeline-panel pa-30">
+												<div class="timeline-heading">
+													<h6 class="mb-15">Halte 002</h6>
+												</div>
+												<div class="timeline-body">
+													<p>Invitamus me testatur sed quod non dum animae tuae lacrimis ut libertatem deum rogus aegritudinis causet. Dicens hoc contra serpentibus isto.</p>
+												</div>
+											</div>
+										</li>
+										
+										<li>
+											<div class="timeline-badge bg-pink">
+												<i class="zmdi zmdi-bus" ></i>
+											</div>
+											<div class="timeline-panel pa-30">
+												<div class="timeline-heading">
+													<h6 class="mb-15">Halte 003</h6>
+												</div>
+	
+												<div class="timeline-body">
+													<p>Invitamus me testatur sed quod non dum animae tuae lacrimis ut libertatem deum rogus aegritudinis causet. Dicens hoc contra serpentibus isto.</p>
+												</div>
+											</div>
+										</li>
+										
+										<li class="timeline-inverted">
+											<div class="timeline-badge bg-blue">
+												<i class="zmdi zmdi-bus" ></i>
+											</div>
+											<div class="timeline-panel pa-30">
+												<div class="timeline-heading">
+													<h6 class="mb-15">Halte 004</h6>
+												</div>
+	
+												<div class="timeline-body">
+													<p>Invitamus me testatur sed quod non dum animae tuae lacrimis ut libertatem deum rogus aegritudinis causet. Dicens hoc contra serpentibus isto.</p>
+												</div>
+											</div>
+										</li>
+										
+										<li>
+											<div class="timeline-badge bg-green">
+												<i class="zmdi zmdi-bus" ></i>
+											</div>
+											<div class="timeline-panel pa-30">
+												<div class="timeline-heading">
+													<h6 class="mb-15">Halte 005</h6>
+												</div>
+	
+												<div class="timeline-body">
+													<p>Invitamus me testatur sed quod non dum animae tuae lacrimis ut libertatem deum rogus aegritudinis causet. Dicens hoc contra serpentibus isto.</p>
+												</div>
+											</div>
+										</li>
+										
+										<li class="clearfix no-float"></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+			</div>
+			
+			<!-- Footer -->
+			<footer class="footer container-fluid pl-30 pr-30">
+				<div class="row">
+					<div class="col-sm-12">
+						<p>2024 &copy; Diskominfo Ogan Ilir</p>
+					</div>
+				</div>
+			</footer>
+			<!-- /Footer -->
+			
+		</div>
+        <!-- /Main Content -->
+
+    </div>
+    <!-- /#wrapper -->
+	
+	<!-- JavaScript -->
+	
+    <!-- jQuery -->
+    <script src="vendors/bower_components/jquery/dist/jquery.min.js"></script>
+	<!-- Moment JavaScript -->
+	<script type="text/javascript" src="vendors/bower_components/moment/min/moment-with-locales.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="vendors/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    
+	<!-- Data table JavaScript -->
+	<script src="vendors/bower_components/datatables/media/js/jquery.dataTables.min.js"></script>
+	
+	<!-- Slimscroll JavaScript -->
+	<script src="dist/js/jquery.slimscroll.js"></script>
+
+	<!-- Bootstrap Select JavaScript -->
+	<script src="vendors/bower_components/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
+	<!-- Multiselect JavaScript -->
+	<script src="vendors/bower_components/multiselect/js/jquery.multi-select.js"></script>
+	<!-- Switchery JavaScript -->
+	<script src="vendors/bower_components/switchery/dist/switchery.min.js"></script>
+	<!-- Select2 JavaScript -->
+	<script src="vendors/bower_components/select2/dist/js/select2.full.min.js"></script>
+
+	<!-- simpleWeather JavaScript -->
+	<script src="vendors/bower_components/moment/min/moment.min.js"></script>
+	<script src="vendors/bower_components/simpleWeather/jquery.simpleWeather.min.js"></script>
+	<script src="dist/js/simpleweather-data.js"></script>
+	
+	<!-- Progressbar Animation JavaScript -->
+	<script src="vendors/bower_components/waypoints/lib/jquery.waypoints.min.js"></script>
+	<script src="vendors/bower_components/jquery.counterup/jquery.counterup.min.js"></script>
+	
+	<!-- Fancy Dropdown JS -->
+	<script src="dist/js/dropdown-bootstrap-extended.js"></script>
+	
+	<!-- Sparkline JavaScript -->
+	<script src="vendors/jquery.sparkline/dist/jquery.sparkline.min.js"></script>
+	
+	<!-- Owl JavaScript -->
+	<script src="vendors/bower_components/owl.carousel/dist/owl.carousel.min.js"></script>
+	
+	<!-- ChartJS JavaScript -->
+	<script src="vendors/chart.js/Chart.min.js"></script>
+	<!-- Slimscroll JavaScript -->
+	<script src="dist/js/jquery.slimscroll.js"></script>
+
+	<!-- Fancy Dropdown JS -->
+	<script src="dist/js/dropdown-bootstrap-extended.js"></script>
+	
+	<!-- Morris Charts JavaScript -->
+    <script src="vendors/bower_components/raphael/raphael.min.js"></script>
+    <script src="vendors/bower_components/morris.js/morris.min.js"></script>
+    <script src="vendors/bower_components/jquery-toast-plugin/dist/jquery.toast.min.js"></script>
+	
+	<!-- Bootstrap Switch JavaScript -->
+	<script src="vendors/bower_components/bootstrap-switch/dist/js/bootstrap-switch.min.js"></script>
+	<!-- Google Map JavaScript -->
+	<!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBxXt2P7-U38bK0xEFIT-ebZJ1ngK8wjww"></script>
+	<script src="dist/js/gmap-data.js"></script> -->
+	
+	
+	<!-- Init JavaScript -->
+	<script src="dist/js/init.js"></script>
+	<script src="dist/js/dashboard-data.js"></script>
+	<!-- Form Advance Init JavaScript -->
+	<script src="dist/js/form-advance-data.js"></script>
+	<!-- Leaflet JavaScript -->
+	<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+	<!-- Leaflet Routing Machine JavaScript -->
+	<script src="https://unpkg.com/leaflet-routing-machine/dist/leaflet-routing-machine.js"></script>
+
+
+    <script>
+        // Initialize the map
+        var map = L.map('map').setView([-3.2360136236357704, 104.66542011707496], 13);
+
+        // Add the base tile layer (you can use different tile layers)
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            maxZoom: 19,
+            attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors'
+        }).addTo(map);
+
+        // Define the bus icon
+        var busIcon = L.icon({
+            iconUrl: 'dist/img/iconbus.png',
+            iconSize: [48, 30], // Size of the icon
+            iconAnchor: [22, 22], // Point of the icon which will correspond to marker's location
+            popupAnchor: [0, -15] // Point from which the popup should open relative to the iconAnchor
+        });
+
+        // Add a marker representing the bus
+        var busMarker = L.marker([-3.2360136236357704, 104.66542011707496], { icon: busIcon }).addTo(map);
+        var busMarker2 = L.marker([-3.240069131495041, 104.65548998567245], { icon: busIcon }).addTo(map);
+        var busMarker3 = L.marker([-3.2593573810496768, 104.65099459461892], { icon: busIcon }).addTo(map);
+
+		// Define the route coordinates
+		var routeCoordinates = [
+			[-3.2360136236357704, 104.66542011707496],
+			[-3.2363252176044677, 104.66535049662839],
+			[-3.2366032552212998, 104.66457266818838],
+			[-3.2369062275056812, 104.66373873940532],
+			[-3.2371027712330935, 104.66335222588786],
+			[-3.23681754313051, 104.66308814833191],
+			[-3.2364604086703608, 104.66367151966008],
+			[-3.236244689807946, 104.66395480285648],
+			[-3.235924400702033, 104.66469226842653],
+			[-3.2357638099101114, 104.66542688417539],
+			[-3.2364205541749684, 104.66587341531869],
+			[-3.2380389802874907, 104.66178629478307],
+			[-3.240069131495041, 104.65548998567245],
+			[-3.2554129054724323, 104.65004068321343],
+			[-3.256138866735714, 104.64700352690132],
+			[-3.2569119957152504, 104.64864574539412],
+			[-3.2592926667118673, 104.65102973987281],
+			[-3.2593573810496768, 104.65099459461892],
+        ];
+
+		L.Routing.control({
+            waypoints: [
+				[-3.2360136236357704, 104.66542011707496],
+				[-3.2363252176044677, 104.66535049662839],
+				[-3.2366032552212998, 104.66457266818838],
+				[-3.2369062275056812, 104.66373873940532],
+				[-3.2371027712330935, 104.66335222588786],
+				[-3.23681754313051, 104.66308814833191],
+				[-3.2364604086703608, 104.66367151966008],
+				[-3.236244689807946, 104.66395480285648],
+				[-3.235924400702033, 104.66469226842653],
+				[-3.2357638099101114, 104.66542688417539],
+				[-3.2364205541749684, 104.66587341531869],
+				[-3.2380389802874907, 104.66178629478307],
+				[-3.240069131495041, 104.65548998567245],
+				[-3.2554129054724323, 104.65004068321343],
+				[-3.256138866735714, 104.64700352690132],
+				[-3.2569119957152504, 104.64864574539412],
+				[-3.2592926667118673, 104.65102973987281],
+				[-3.2593573810496768, 104.65099459461892],
+            ],
+            routeWhileDragging: true, // Show route while dragging the waypoints
+            lineOptions: {
+                styles: [{color: '#ff0000', opacity: 0.7, weight: 5}] // Route line style
+            }
+        }).addTo(map);
+
+        // Add a line representing the route
+        var routeLine = L.polyline(routeCoordinates, { color: 'red' }).addTo(map);
+
+        // Fit the map to the bounds of the route line
+        map.fitBounds(routeLine.getBounds());
+
+        // Set the popup message
+        busMarker.bindPopup("<table><tbody><tr><td>Bus Location</td><td>:</td><td>Halte Pemda Lama</td></tr><tr><td>No Bus</td><td>:</td><td>SB_001</td></tr><tr><td>Driver</td><td>:</td><td>Putra Siregar</td></tr><tr><td>Jumlah Kursi</td><td>:</td><td>32</td></tr><tr><tr><td>Rute</td><td>:</td><td>KPT. Pemda Lama - KPT. Tanjung Senai</td></tr><td>Trip Ke</td><td>:</td><td>1</td></tr><tr><td>Jam Keberangkatan</td><td>:</td><td>06:30 WIB</td></tr><tr><td>Estimasi Lama Perjalanan</td><td>:</td><td>2 Jam 32 Menit</td></tr></tbody></table>").openPopup();
+        // Set the popup message
+        busMarker3.bindPopup("<table><tbody><tr><td>Bus Location</td><td>:</td><td>Halte KPT. Tanjung Senai</td></tr><tr><td>No Bus</td><td>:</td><td>SB_001</td></tr><tr><td>Driver</td><td>:</td><td>Putra Siregar</td></tr><tr><td>Jumlah Kursi</td><td>:</td><td>32</td></tr><tr><tr><td>Rute</td><td>:</td><td>KPT. Pemda Lama - KPT. Tanjung Senai</td></tr><td>Trip Ke</td><td>:</td><td>1</td></tr><tr><td>Jam Kedatangan</td><td>:</td><td>07:30 WIB</td></tr><tr><td>Estimasi Lama Perjalanan</td><td>:</td><td>1 Jam 00 Menit</td></tr></tbody></table>").openPopup();
+    </script>
+</body>
+
+</html>
