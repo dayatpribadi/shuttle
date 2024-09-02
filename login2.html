@@ -70,7 +70,11 @@
 														<label class="pull-left control-label txt-light mb-10" for="exampleInputpwd_2">Kata Sandi</label>
 														<a class="capitalize-font txt-light block mb-10 pull-right font-12" href="#">Lupa Kata Sandi ?</a>
 														<div class="clearfix"></div>
-														<input type="password" class="form-control" required="" id="exampleInputpwd_2" placeholder="Enter Password">
+														<div class="input-group mb-15">
+															<input type="password" id="exampleInputpwd_2" name="exampleInputpwd_2" class="form-control input password-input" placeholder="Enter Password">
+															<span class="input-group-addon" style="background-color: #FFF;"><i class="fa fa-eye"></i></span> 
+														</div>
+														
 													</div>
 													
 													<div class="form-group">
@@ -83,6 +87,7 @@
 													<div class="form-group text-right">
 														<button type="submit" class="btn btn-default btn-rounded">Masuk Aplikasi</button>
 													</div>
+
 												</form>
 											</div>
 										</div>
@@ -104,6 +109,7 @@
 		
 		<!-- jQuery -->
 		<script src="vendors/bower_components/jquery/dist/jquery.min.js"></script>
+		<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> -->
 		
 		<!-- Bootstrap Core JavaScript -->
 		<script src="vendors/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
@@ -114,5 +120,28 @@
 		
 		<!-- Init JavaScript -->
 		<script src="dist/js/init.js"></script>
+
+		<script>
+
+			let eye = document.getElementsByClassName('password'),
+				create = $('#switch-create'),
+				login = $('#switch-login'),
+				loginPage = $('#login-page-form'),
+				createPage = $('#create-page-form');
+
+			for (let i = 0; i < eye.length; i++) {
+				eye[i].addEventListener('click', function () {
+					let input = document.getElementsByClassName('input');
+					if (eye[i].className == 'fa fa-eye password') {
+						eye[i].className = "fa fa-eye-slash password";
+						input[i].type = 'text';
+					} else {
+						eye[i].className = "fa fa-eye password";
+						input[i].type = 'password';
+					}
+				})
+			}
+
+		</script>
 	</body>
 </html>
