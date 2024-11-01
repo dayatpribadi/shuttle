@@ -16761,7 +16761,12 @@ ul.inbox-nav li a:focus {
   margin-top: 50px;
   text-align: center;
   justify-content: center;
+  color: #FFF !important;
+}
+
+.super-dev a {
   color: #FFF;
+  cursor: pointer;
 }
 
 
